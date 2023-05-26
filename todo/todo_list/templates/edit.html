@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if item %}
+        <form class="d-flex" role="search" method="POST">
+            {% csrf_token %}
+          <input class="form-control me-2" type="search" placeholder="{{ item.item }}" aria-label="Search" name="item">
+          <button class="btn btn-outline-secondary" type="submit">Update</button>
+        </form>
+    {% endif %}
+
+{% endblock %}
