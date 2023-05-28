@@ -1,1 +1,2 @@
-[Tutorial Link](https://www.youtube.com/watch?v=fEqOW6FrokA)
+[Tutorial](https://www.youtube.com/watch?v=llbtoQTt4qw)
+[article](https://dennisivy.com/django-class-based-views)
