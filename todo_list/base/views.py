@@ -55,7 +55,7 @@ class TaskList(LoginRequiredMixin, ListView):
         return context
     
 
-class TaskDetail(LoginRequiredMixin ,DetailView):
+class TaskDetail(LoginRequiredMixin, DetailView):
     model = Task
     context_object_name = 'task'
     template_name = 'base/task.html'
@@ -79,3 +79,8 @@ class TaskDelete(LoginRequiredMixin, DeleteView):
     context_object_name = 'task'
     success_url = reverse_lazy('tasks')
 
+def task_complete(request, pk):
+    task = Task.objects.get(pk=pk)
+    task.complete = not task.complete
+    task.save()
+    return redirect('tasks')
