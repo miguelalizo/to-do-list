@@ -1,7 +1,0 @@
-       <form class="d-flex" role="search" method="POST">
-            {% csrf_token %}
-            <input type="text" class="form-control" placeholder="{{ item.item }}" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <button class="btn btn-outline-secondary" type="submit">Update</button>
-            <input type="hidden" value="{% {{item.item}} %}" name="completed">
-
-        </form>
