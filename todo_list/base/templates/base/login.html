@@ -2,10 +2,11 @@
 {% block content %}
 
 <div class="header-bar">
-    <h1>Login</h1>
+    <h1>To-do List</h1>
 </div>
 
 <div class="card-body">
+    <p>Login to get started</p>
     <form method="POST">
         {% csrf_token %}
         {{form.as_p}}
