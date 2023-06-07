@@ -73,6 +73,11 @@ class TaskUpdate(LoginRequiredMixin, UpdateView):
     model = Task
     fields = ['title', 'description', 'complete'] 
     success_url = reverse_lazy('tasks')
+    def get_queryset (self) :
+        print ('update get _queryset called')
+        # Limit a User to only modifying their own data.
+        qs = super(TaskUpdate, self).get_queryset()
+        return qs.filter(user=self.request.user)
 
 class TaskDelete(LoginRequiredMixin, DeleteView):
     model = Task
