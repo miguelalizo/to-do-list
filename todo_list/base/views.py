@@ -41,7 +41,9 @@ class UserTaskCreate(UserBasedCreate):
 class UserTaskUpdate(UserBasedUpdate):
     model = Task
     fields = ['title', 'description', 'complete'] 
-    success_url = reverse_lazy('tasks')
+    def get_success_url(self):
+        return reverse_lazy('task', kwargs={'pk': self.object.pk})
+    # success_url = redirect(UserTaskDetail, kwargs={'pk': model.pk})
 
 class UserTaskDelete(UserBasedDelete):
     model = Task

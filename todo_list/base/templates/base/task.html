@@ -1,7 +1,26 @@
 {% extends 'base/main.html' %}
 {% block content %}
+{% load base_tags %}
 
-<h1>Task: {{task}}</h1>
+
+<div class="header-bar">
+    <h1>{{task}}</h1>
+    <a href="{% url 'tasks' %}">&#8592; Back</a>
+</div>
+
+<div class="card-body"> 
+    <p>{{ task.description|markdown }}</p>
+
+    {% if task.complete %}
+        <p>Task Complete</p>
+
+    {% else %}
+    <h4>Task Not Complete</h4>
+    {% endif %}
+
+    <h3><a href="{% url 'task-update' task.id %}">Edit</a></h3>
+</div>
+
 
 
 {% endblock content %}
