@@ -13,7 +13,6 @@ Many thanks to Dennis Ivy for his wonderful [tutorial](https://www.youtube.com/w
 - User authentication and authorization.
 - Responsive and user-friendly interface.
 
-## Screenshots
 
 ![Sample screen](static/sample_page.png)
 
