@@ -32,7 +32,7 @@ Many thanks to Dennis Ivy for his wonderful [tutorial](https://www.youtube.com/w
 
 5. Click the grey dot of a task to mark as complete
 
-Tip: refrain from deleting tasks that are performed daily. Instead, mark them as incomplete by clicking the task's green dot. This way, there is no need to recreate daily tasks.
+    - Tip: refrain from deleting tasks that are performed daily. Instead, mark them as incomplete by clicking the task's green dot. This way, there is no need to recreate daily tasks.
 
 6. Click the red X next to a task to delete the tasks
 
