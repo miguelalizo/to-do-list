@@ -16,11 +16,6 @@ Many thanks to Dennis Ivy for his wonderful [tutorial](https://www.youtube.com/w
 
 ![Sample screen](static/sample_page.png)
 
-### Prerequisites
-
-- Python 3.x
-- Django 3.2.x
-- PostgreSQL
 
 ### Usage
 
@@ -30,30 +25,16 @@ Many thanks to Dennis Ivy for his wonderful [tutorial](https://www.youtube.com/w
 
 ![login](static/login.png)
 
-![main](static/main.png)
 
 3. Add tasks to your todo by clicking the green plus sign
 
-![Add task](static/task_add.png)
-
-Open tasks will display a grey dot
-
-![Open task](static/task_open.png)
-
 4. Click on a task, then click `Edit` to update the contents
 
-![Update tasks](static/task_update.png)
-
 5. Click the grey dot of a task to mark as complete
-
-![Mark Complete](static/task_complete.png)
 
 Tip: refrain from deleting tasks that are performed daily. Instead, mark them as incomplete by clicking the task's green dot. This way, there is no need to recreate daily tasks.
 
 6. Click the red X next to a task to delete the tasks
-
-![Delete](static/task_delete.png)
-
 
 ## License
 
